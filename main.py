@@ -53,15 +53,17 @@ class Game:
 
     def generate_npcs(self, count):
         for _ in range(count):
-            x = random.randint(-500, 500)
-            y = random.randint(-500, 500)
+            # Gera NPCs em um raio de 200 pixels do centro
+            x = random.randint(-200, 200)
+            y = random.randint(-200, 200)
             if self.game_map.get_tile_at(x, y) != 'water':  # NPCs não spawnam na água
                 self.npcs.append(NPC(x, y))
 
     def generate_items(self, count):
         for _ in range(count):
-            x = random.randint(-500, 500)
-            y = random.randint(-500, 500)
+            # Gera itens em um raio de 200 pixels do centro
+            x = random.randint(-200, 200)
+            y = random.randint(-200, 200)
             if self.game_map.get_tile_at(x, y) != 'water':  # Itens não spawnam na água
                 potion = ITEMS['potion']()
                 potion.x = x
