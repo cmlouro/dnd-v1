@@ -24,7 +24,7 @@ Um jogo de RPG inspirado em Dungeons and Dragons, onde você controla uma galinh
 
 1. Clone este repositório:
 ```bash
-git clone https://github.com/cmlouro/dnd-v1.git
+git clone https://github.com/seu-usuario/dnd-galinha.git
 cd dnd-galinha
 ```
 
